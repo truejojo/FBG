@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Family Brain Games-Variante 5</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+  </head>
+  <body>
+  <header>
+   <h1><a href="index.html">Family Brain Games</a></h1>
+   <nav>
+     <ul>
+       <li><a href="index.html" class="selected">Spiele</a></li>
+       <li><a href="html/aboutGames.html">Über Spiele</a></li>
+       <li><a href="html/aboutMe.html">Über mich</a></li>
+     </ul>
+   </nav>
+ </header>   
+	<div id="wrapper">
+	<section id="spielBrett" class="group">
+	  <div id="willkommen">
+	    <h2>Willkommen</h2>
+      <p>Wähle aus, wie viele Runden Du spielen möchtest und gib an, mit wie
+      vielen Silbenpaaren Du spielen willst.</p>
+    </div>
+	  <form>
+	    <div id="einrichten">    
+		    <div class="spielAngaben">
+			    <div id="rundenzahlAbfragen" class="group">
+			      <label for="rundenanzahl">Rundenanzahl</label>       
+			      <select name="rundenanzahl" id="rundenanzahl">
+			        <option value="2" selected="selected">2</option>
+			        <option value="3">3</option>
+			        <option value="4">4</option>
+			        <option value="5">5</option>
+			        <option value="6">6</option>
+			        <option value="7">7</option>
+			        <option value="8">8</option>
+			        <option value="9">9</option>
+			        <option value="10">10</option>
+			        <option value="11">11</option>
+			        <option value="12">12</option> 
+			      </select>
+			    </div>  
+			  </div>				
+				<div class="spielAngaben">
+				  <div id="silbenlaengeAbfragen" class="group">
+			      <label for="silbenlaenge">Silbenpaare</label>
+			      <select name="silbenlaenge" id="silbenlaenge">
+			        <option value="2" selected="selected">2</option>
+			        <option value="3">3</option>
+			        <option value="4">4</option>
+			        <option value="5">5</option>
+			        <option value="6">6</option>
+			        <option value="7">7</option>
+			        <option value="8">8</option>
+			      </select>
+			    </div>  
+		    </div>  		    
+		    <div id="start" class="group">
+	        <input type="button" id="startButton" value="Spiel-Starten">
+		    </div>
+	    </div>	    
+	    <div id="zeigeZeichenfolge">
+	      <div id="silbenAusgabe"></div>
+	      <input type="button" id="okButton" value="OK">
+	    </div>
+	    <div id="senden">
+	      <input type="text" id="silbenEingabe">
+	      <input type="button" id="vergleichButton" value="vergleiche">
+	    </div>  
+	    <div id="richtigFalsch">
+	    <!-- maxlength="20" -->
+	      <div id="richtigFalschAusgabe"></div>
+	      <input type="button" id="weiterButton" value="weiter">
+	    </div>
+	    
+	    <div id="endergebnis">
+	      <p id="endergebnisAusgabe"></p>
+	      <input type="button" id="nochmalButton" value="nochmal">
+	      <input type="button" id="zurueckButton" value="zurück">
+	    </div>
+	    
+	  </form>
+	</section>
+	</div>
+   <footer>
+    <div>
+      <p>&copy; 2014 Johannes Vehring</p>
+    </div>
+  </footer>
+  <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/spiel.js"></script>
+  </body>
+</html>

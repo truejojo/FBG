@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Family Brain Games-Variante 5</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/layout.css">
+  </head>
+  <body>
+  <header>
+   <h1><a href="index.html">Family Brain Games</a></h1>
+   <nav>
+     <ul>
+       <li><a href="index.html" class="selected">Spiele</a></li>
+       <li><a href="aboutGames.html">Über Spiele</a></li>
+       <li><a href="aboutMe.html">Über mich</a></li>
+     </ul>
+   </nav>
+ </header>   
+		<div id="wrapper" class="group">
+			
+      <section id="spielBrett">
+      
+      
+      
+        <div id="einrichten">
+          <label for="rundenanzahl">Rundenanzahl:</label>
+          <input type="text" id="rundenanzahl" />
+      
+          <label for="silbenlaenge">Silbenlaenge:</label>
+          <input type="email" id="silbenlaenge" />
+          <input id="spielen" type="button" value="spielen" />
+        </div>
+        
+        <div id="zeigeZeichenfolge">
+          <label for="ausgabe">Ausgabe: </label>
+          <!-- #responseText -->
+          <span id="ausgabe"></span>
+          <!-- call_back_btn -->
+          <input id="entferneZeichenfolge" type="button" value="OK" />
+        </div>
+        
+        <div id="senden">
+          <label for="eingabe">Eingabe:</label>
+          <!-- input_text -->
+          <input id="eingabe" type="text"></input>
+          <input id="sendeZeichenfolge" type="button" value="vergleichen" />
+        </div>
+        
+        <div id="richtigFalsch">
+          <span id="richtigFalschAusgabe"></span>
+          <input id="richtigFalschButton" type="button" value="weiter" />
+        </div>
+        
+        
+        
+                
+      </section>
+   </div>  
+   <footer>
+    <div>
+      <p>&copy; 2014 Johannes Vehring</p>
+    </div>
+  </footer>
+  <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+  <script src="../../controller/games/uebergabe.js" type="text/javascript" 
+          charset="utf-8"></script>
+  <script src="../../model/kzmf/game.js" type="text/javascript"
+          charset="utf-8"></script>
+  </body>
+</html>
